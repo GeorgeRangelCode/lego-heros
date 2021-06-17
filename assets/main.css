@@ -290,7 +290,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .visible {
@@ -302,5 +302,14 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  z-index: 3;
+  z-index: 4;
+
+  display: grid;
+  place-items: center;
+}
+
+.modal__content {
+  background: white;
+  width: 50%;
+  height: 50%;
 }
